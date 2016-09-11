@@ -1,0 +1,21 @@
+package com.orgHRM123;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+
+public class login 
+{
+	@BeforeTest
+	public void launch()
+	{
+		WebDriver driver=new FirefoxDriver();
+		driver=new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.get("http://opensource.demo.orangehrlive.com");
+		driver.manage().window().maximize();
+	}
+
+}
